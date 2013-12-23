@@ -1,0 +1,7 @@
+{
+	"name": "hello",
+	"dependencies": ["index"],
+	"css": "style.css",
+	"browserjs": "browser.js",
+	"nodejs": "node.js"
+}
