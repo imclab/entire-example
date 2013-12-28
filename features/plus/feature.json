@@ -1,7 +1,6 @@
 {
-	"name": "minus",
+	"name": "plus",
 	"dependencies": ["index", "equals"],
 	"styles": "style.css",
-	"scripts": "browser.js",
-	"router": "node.js"
+	"scripts": "browser.js"
 }

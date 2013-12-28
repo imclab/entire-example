@@ -1,0 +1,6 @@
+{
+	"name": "equals",
+	"dependencies": ["index"],
+	"styles": "style.css",
+	"scripts": "browser.js"
+}
