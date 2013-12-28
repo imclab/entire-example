@@ -5,24 +5,23 @@ var path = require("path");
 var featurlets = require("../featurlets");
 
 app.use(function *(next){
-	if(/\/basic\//.test(this.path)){
-		this.permission = "basic";
-		this.path = this.path.replace("/basic", "");
+	if(/\/styled\//.test(this.path)){
+		this.permission = "styled";
+		this.path = this.path.replace("/styled", "");
 	}
-	else if(/\/scientific\//.test(this.path)){
-		this.permission = "scientific";
-		this.path = this.path.replace("/scientific", "");
+	else{
+		this.permission = "boring";
 	}
 	yield next;
 });
 
 app.use(featurlets({
 	"permissions": {
-		"basic": [
-			"minus", "plus", "equals", "index"
+		"boring": [
+			"index"
 		],
-		"scientific": [
-			"square-root", "minus", "plus", "equals", "index"
+		"styled": [
+			"style"
 		]
 	},
 	"folder": path.join(__dirname, "features")

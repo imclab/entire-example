@@ -1,6 +1,6 @@
 {
-	"name": "minus",
-	"dependencies": ["index", "equals"],
+	"name": "style",
+	"dependencies": ["index"],
 	"styles": "style.css",
 	"scripts": "browser.js",
 	"router": "node.js"

@@ -1,6 +1,5 @@
 {
 	"name": "index",
-	"styles": "style.css",
-	"scripts": "browser.js",
-	"router": "node.js"
+	"router": "node.js",
+	"styles": "style.css"
 }
