@@ -1,0 +1,5 @@
+{
+	"name": "script",
+	"scripts": "scripts.js",
+	"dependencies": ["index"]
+}

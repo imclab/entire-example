@@ -9,6 +9,10 @@ app.use(function *(next){
 		this.permission = "styled";
 		this.path = this.path.replace("/styled", "");
 	}
+	else if(/\/scripted\//.test(this.path)){
+		this.permission = "scripted";
+		this.path = this.path.replace("/scripted", "");
+	}
 	else{
 		this.permission = "boring";
 	}
@@ -22,6 +26,9 @@ app.use(featurlets({
 		],
 		"styled": [
 			"style"
+		],
+		"scripted": [
+			"index", "script"
 		]
 	},
 	"folder": path.join(__dirname, "features")
