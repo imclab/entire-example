@@ -2,6 +2,5 @@
 	"name": "style",
 	"dependencies": ["index"],
 	"styles": "style.css",
-	"scripts": "browser.js",
 	"router": "node.js"
 }

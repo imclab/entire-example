@@ -1,5 +1,5 @@
 module.exports = function(app){
-	app.post("/minus", function*(){
-		this.body = {msg:"hello world"};
+	app.get("/minus", function*(){
+		this.body = "what";
 	});
 }

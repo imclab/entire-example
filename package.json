@@ -6,7 +6,8 @@
   "dependencies": {
     "koa": "~0.1.2",
     "koa-compose": "~2.1.0",
-    "featurlets": "https://github.com/mcwhittemore/featurlets/tarball/master"
+    "featurlets": "https://github.com/mcwhittemore/featurlets/tarball/master",
+    "require-more": "0.0.0"
   },
   "devDependencies": {},
   "scripts": {
