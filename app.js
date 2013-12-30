@@ -2,7 +2,7 @@ var koa = require('koa');
 var app = koa();
 var path = require("path");
 
-var featurlets = require("../featurlets");
+var entire = require("entire");
 
 app.use(function *(next){
 	if(/\/styled\//.test(this.path)){
@@ -19,7 +19,7 @@ app.use(function *(next){
 	yield next;
 });
 
-app.use(featurlets({
+app.use(entire({
 	"permissions": {
 		"boring": [
 			"index"
@@ -31,8 +31,9 @@ app.use(featurlets({
 			"index", "script"
 		]
 	},
-	"folder": path.join(__dirname, "features")
-}).all);
+	"folder": path.join(__dirname, "features"),
+	"ext": "ejs"
+}));
 
 
 app.listen(3000);
