@@ -29,6 +29,9 @@ app.use(entire({
 		],
 		"scripted": [
 			"index", "script"
+		],
+		"views": [
+			"index", "views"
 		]
 	},
 	"folder": path.join(__dirname, "features"),
