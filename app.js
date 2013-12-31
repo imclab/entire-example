@@ -13,6 +13,10 @@ app.use(function *(next){
 		this.permission = "scripted";
 		this.path = this.path.replace("/scripted", "");
 	}
+	else if(/\/views\//.test(this.path)){
+		this.permission = "views";
+		this.path = this.path.replace("/views", "");
+	}
 	else{
 		this.permission = "boring";
 	}
