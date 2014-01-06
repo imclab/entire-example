@@ -5,9 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "koa": "~0.1.2",
-    "koa-compose": "~2.1.0",
-    "featurlets": "https://github.com/entirejs/entire/tarball/master",
-    "require-more": "0.0.0"
+    "entire": "https://github.com/entirejs/entire/tarball/master",
+    "ejs": "~0.8.5"
   },
   "devDependencies": {},
   "scripts": {

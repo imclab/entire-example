@@ -5,6 +5,7 @@ var path = require("path");
 var entire = require("entire");
 
 app.use(function *(next){
+
 	if(/\/styled\//.test(this.path)){
 		this.permission = "styled";
 		this.path = this.path.replace("/styled", "");
@@ -29,13 +30,13 @@ app.use(entire({
 			"index"
 		],
 		"styled": [
-			"style"
+			"frontend-css"
 		],
 		"scripted": [
-			"index", "script"
+			"index", "frontend-js"
 		],
 		"views": [
-			"index", "views"
+			"index", "backend-js"
 		]
 	},
 	"folder": path.join(__dirname, "features"),

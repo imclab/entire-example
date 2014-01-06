@@ -1,5 +1,5 @@
 {
-	"name": "views",
+	"name": "backend-js",
 	"router": "node.js",
 	"dependencies": ["index"]
 }
