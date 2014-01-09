@@ -12,7 +12,6 @@ app.use(function *(next){
 app.use(entire({
 	"permissions": {
 		"default": [
-			"entire-react",
 			"example-index"
 		]
 	},

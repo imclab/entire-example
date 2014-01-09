@@ -1,6 +1,9 @@
 # entire-example
 
-
+"example-list": "../example-features/list",
+"example-list-add": "../example-features/list-add",
+"example-list-remove": "../example-features/list-remove",
+"example-list-sort": "../example-features/list-sort",
 
 ## How To Run
 
