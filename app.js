@@ -5,41 +5,17 @@ var path = require("path");
 var entire = require("entire");
 
 app.use(function *(next){
-
-	if(/\/styled\//.test(this.path)){
-		this.permission = "styled";
-		this.path = this.path.replace("/styled", "");
-	}
-	else if(/\/scripted\//.test(this.path)){
-		this.permission = "scripted";
-		this.path = this.path.replace("/scripted", "");
-	}
-	else if(/\/views\//.test(this.path)){
-		this.permission = "views";
-		this.path = this.path.replace("/views", "");
-	}
-	else{
-		this.permission = "boring";
-	}
+	this.permission = "default";
 	yield next;
 });
 
 app.use(entire({
 	"permissions": {
-		"boring": [
-			"index"
-		],
-		"styled": [
-			"frontend-css"
-		],
-		"scripted": [
-			"index", "frontend-js"
-		],
-		"views": [
-			"index", "backend-js"
+		"default": [
+			"entire-react",
+			"example-index"
 		]
 	},
-	"folder": path.join(__dirname, "features"),
 	"ext": "ejs"
 }));
 
