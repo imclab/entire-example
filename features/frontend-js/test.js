@@ -1,1 +1,0 @@
-module.exports = "Script: Test.js";

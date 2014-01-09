@@ -1,6 +1,0 @@
-{
-	"name": "frontend-css",
-	"dependencies": ["index"],
-	"styles": "style.css",
-	"router": "node.js"
-}
