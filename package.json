@@ -6,7 +6,7 @@
   "dependencies": {
     "koa": "~0.1.2",
     "entire": "https://github.com/entirejs/entire/tarball/master",
-    "entire-react": "https://github.com/EntireJS/entire-react/tarball/v0.8.0-1",
+    "react": "https://github.com/njpatel/react/tarball/master",
     "entire-jquery": "https://github.com/EntireJS/entire-jquery/tarball/v2.0.3-1",
     "entire-bootstrap": "https://github.com/EntireJS/entire-bootstrap/tarball/v3.0.3-1",
     "example-index": "https://github.com/EntireJS/example-index/tarball/master",

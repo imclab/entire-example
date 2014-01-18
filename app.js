@@ -12,7 +12,8 @@ app.use(function *(next){
 app.use(entire({
 	"permissions": {
 		"default": [
-			"example-index"
+			"example-index",
+			"example-single-list-page"
 		]
 	},
 	"ext": "ejs"
