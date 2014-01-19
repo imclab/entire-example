@@ -1,13 +1,8 @@
 {
-  "name": "the-feature-game",
+  "name": "index-page",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "koa": "~0.1.2",
-    "entire": "https://github.com/entirejs/entire/tarball/slimed",
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,23 +1,14 @@
+if(process.env.NODE_PATH!="local_modules"){
+	console.log("NODE_PATH must be set to local_modules");
+	process.exit(1);
+}
+
 var koa = require('koa');
 var app = koa();
-var path = require("path");
 
 var entire = require("entire");
 
-app.use(function *(next){
-	this.permission = "default";
-	yield next;
-});
-
-app.use(entire({
-	"permissions": {
-		"default": [
-			"example-index",
-			"example-single-list-page"
-		]
-	},
-	"ext": "ejs"
-}));
-
+app.use(entire("index-page"));
+app.use(entire(""))
 
 app.listen(3000);
